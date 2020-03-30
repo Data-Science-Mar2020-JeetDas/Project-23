@@ -1,0 +1,86 @@
+# Question - C : print available country
+
+country = df.groupby(['Location'])[['Period']].count()
+print("---------------------------------")
+print("\tAvailable country names : ")
+print("-------------------------------")
+print(country)
+print("-------------------------------")
+count = 0
+for row in range(len(country)): 
+        count = count+1
+print("total no. of country = ",count)        
+print("-----------------------------\n")
+
+---------------------------------
+        Available country names : 
+-------------------------------
+                                           Period
+Location                                         
+Albania                                         1
+Angola                                          1
+Antigua and Barbuda                             1
+Armenia                                         1
+Azerbaijan                                      1
+Bahrain                                         1
+Belgium                                         1
+Bosnia and Herzegovina                          1
+Brazil                                          1
+Brunei Darussalam                               1
+Bulgaria                                        1
+Burkina Faso                                    1
+Burundi                                         1
+Canada                                          1
+Central African Republic                        1
+Chad                                            1
+Congo                                           1
+Cook Islands                                    1
+Costa Rica                                      1
+Croatia                                         1
+Cuba                                            1
+Cyprus                                          1
+Czechia                                         1
+Dominican Republic                              1
+Ecuador                                         1
+Egypt                                           1
+El Salvador                                     1
+Equatorial Guinea                               1
+Eritrea                                         1
+Estonia                                         1
+                                          ...
+Romania                                         1
+Russian Federation                              1
+Rwanda                                          1
+Saint Lucia                                     1
+Saint Vincent and the Grenadines                1
+Samoa                                           1
+Sao Tome and Principe                           1
+Saudi Arabia                                    1
+Senegal                                         1
+Serbia                                          1
+Sierra Leone                                    1
+Slovenia                                        1
+Spain                                           1
+Sri Lanka                                       1
+Sudan                                           1
+Suriname                                        1
+Syrian Arab Republic                            1
+Thailand                                        1
+The former Yugoslav Republic of Macedonia       1
+Timor-Leste                                     1
+Togo                                            1
+Turkey                                          1
+Uganda                                          1
+United Arab Emirates                            1
+United Republic of Tanzania                     1
+United States of America                        1
+Vanuatu                                         1
+Yemen                                           1
+Zambia                                          1
+Zimbabwe                                        1
+
+[100 rows x 1 columns]
+-------------------------------
+total no. of country =  100
+-----------------------------
+
